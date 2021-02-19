@@ -1,0 +1,8 @@
+﻿[Class]
+	[EFFECT]
+		ControlMove.cs
+		FormOpacity.cs
+	[OPTION]
+		DefaultOption.cs
+		iniGetSet.cs
+	ControlsCollector.cs

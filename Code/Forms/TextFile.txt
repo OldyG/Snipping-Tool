@@ -1,0 +1,48 @@
+﻿[Forms]
+	[[MainForm]]
+		MainForm.cs
+			설명)	프로그램실행시 최초로 실행되는 Form입니다.
+				CodeMetric
+					1)
+				
+		MainForm_[SHARE].cs				// as MainForm.cs
+			설명)	MainForm 내에서 공용으로 사용되는 코드입니다.
+
+		MainForm_Capture.cs				// as MainForm.cs
+			설명)	캡쳐작업 코드들로 "backImageForm.cs","whiteForm.cs"와 연계됩니다.
+
+		MainForm_ColorList.cs			// as MainForm.cs
+			설명)	이미지의 색상수집하는 코드들로, "ColorList.cs"와 연계됩니다.
+
+		MainForm_HotKeys.cs				// as MainForm.cs
+			설명)	윈도우 전역 키를 등록하는 코드입니다.
+
+		MainForm_Load_Event_ETC.cs		// as MainForm.cs
+			설명)	프로그램 실행 시 설정되는 이벤트,초기디자인 등을 설정하는 코드입니다.
+	
+	[CaptureForm]
+		backImageForm.cs
+			설명)	MainForm.cs로부터 전체배경화면을 받아 화면전체를 덮는 Form입니다.
+		whiteForm.cs
+			설명)	마우스 드래그로 캡쳐할 영역을 정하여 MainForm.cs에게 전달하는 Form입니다.
+
+	[ETC]
+		Character.cs
+			설명)	완성되지 않은 Form으로 이미지 위에 텍스트 작성을 목적으로 생성한 Form입니다.
+		ColorList.cs
+			설명)	MainForm.cs의 이미지 색상을 받아 ListView로 출력하는 Form입니다.
+
+	[SettingForm]
+		[SettingForm_UserControls]
+			SetCapture.cs
+				설명)	캡쳐와 관련된 옵션을 담는 UserInterFace입니다.
+			SetInterFace.cs
+				설명)	인터페이스와 관련된 옵션을 담는 UserInterFace입니다.
+			SetSave.cs
+				설명)	저장과 관련된 옵션을 담는 UserInterFace입니다.
+
+		SettingForm.cs
+			설명)	[SettingForm_UserControls]에 있는 유저인터페이스를 담는 Form입니다.
+
+		SettingForm_InterFace_Event.cs	// as SettingForm.cs
+			설명)	
